@@ -1,0 +1,50 @@
+.page-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30 20px;
+  background-color: #f0fff0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.page-container h2 {
+  text-align: center;
+  color: #1b4332;
+  margin-bottom: 15px;
+}
+
+.recipe-box input {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.recipe-box button {
+  padding: 10px 20px;
+  background-color: #40916c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipe-box button:hover {
+  background-color: #2d6a4f;
+}
+
+.results {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background-color: #e9f5f2;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

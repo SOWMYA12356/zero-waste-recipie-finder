@@ -1,0 +1,153 @@
+/* General body settings */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Light and Dark mode variables */
+.app.light {
+  --bg: #f7f8fa;
+  --text: #222;
+  --card: #fff;
+  --button-bg: #4caf50;
+  --button-text: white;
+}
+
+.app.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card: #1e1e1e;
+  --button-bg: #4caf50;
+  --button-text: white;
+}
+
+/* App background */
+.app {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Header & Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: var(--card);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+/* Navbar links */
+.controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controls a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.controls a:hover {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+/* Navbar buttons (Dark Mode / Logout) */
+.controls button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  opacity: 0.9;
+}
+
+/* Auth box and recipe box styling */
+.auth-box, .recipe-box {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: var(--card);
+  color: var(--text);
+}
+
+input::placeholder {
+  color: var(--text);
+  opacity: 0.7;
+}
+
+/* Buttons inside forms */
+button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Links inside forms */
+.link {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Recipe results */
+.results {
+  margin-top: 20px;
+}
+
+.card {
+  background: var(--card);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  color: var(--text);
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .controls {
+    justify-content: center;
+  }
+}

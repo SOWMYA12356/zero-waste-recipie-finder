@@ -1,0 +1,19 @@
+.page-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.page-container h2 {
+  text-align: center;
+  color: #1b4332;
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

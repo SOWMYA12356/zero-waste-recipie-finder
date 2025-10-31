@@ -1,0 +1,47 @@
+/* src/pages/Blog.css */
+
+.auth-box {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fffdf7;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.auth-box h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  background-color: #f9fafc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+  border-left: 6px solid #4caf50;
+}
+
+.card:hover {
+  background-color: #f0fff3;
+  transform: translateY(-3px);
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+}
+
+.card h3 {
+  color: #388e3c;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
